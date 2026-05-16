@@ -14,7 +14,7 @@ export default function ContactPage() {
           className="text-center mb-20"
         >
           <h1 className="text-6xl md:text-8xl font-bold text-gray-900 mb-6 tracking-tight uppercase leading-none">
-            CONTACT <span className="text-blue-600">US</span>
+            CONTACT <span className="text-fasco-primary">US</span>
           </h1>
           <p className="text-gray-700 text-xl max-w-2xl mx-auto font-medium leading-relaxed">
             If you have any questions about the services we provide simply use the form below. We try and respond to all queries and comments within 24 hours.
@@ -31,13 +31,13 @@ export default function ContactPage() {
               className="p-10 rounded-3xl glass border border-black/5 bg-white/50 shadow-sm"
             >
               <div className="flex items-center gap-3 mb-6">
-                <MapPin className="text-blue-600" size={24} />
+                <MapPin className="text-fasco-primary" size={24} />
                 <h3 className="text-gray-900 font-bold text-xl uppercase tracking-tight">Unit 1 – Singapore</h3>
               </div>
               <p className="text-gray-700 text-lg leading-relaxed ml-9 font-medium">#02-2056, Block 3012, Bedok Industrial Park E, Singapore 489978</p>
               <div className="flex items-center gap-3 mt-6 ml-9">
-                <Mail size={18} className="text-blue-600" />
-                <a href="mailto:sales@fascoindia.com" className="text-gray-700 font-bold hover:text-blue-600 transition-colors">sales@fascoindia.com</a>
+                <Mail size={18} className="text-fasco-primary" />
+                <a href="mailto:sales@fascoindia.com" className="text-gray-700 font-bold hover:text-fasco-primary transition-colors">sales@fascoindia.com</a>
               </div>
             </motion.div>
 
@@ -49,26 +49,26 @@ export default function ContactPage() {
               className="p-10 rounded-3xl glass border border-black/5 bg-white/50 shadow-sm"
             >
               <div className="flex items-center gap-3 mb-6">
-                <MapPin className="text-blue-600" size={24} />
+                <MapPin className="text-fasco-primary" size={24} />
                 <h3 className="text-gray-900 font-bold text-xl uppercase tracking-tight">Unit 2 – Coimbatore</h3>
               </div>
               <p className="text-gray-700 text-lg leading-relaxed ml-9 font-medium">1400, Eran Thottam, Behind Deccan Industries, Ganapathy, Coimbatore -641006, Tamilnadu, India.</p>
               <div className="space-y-3 mt-6 ml-9">
                 <div className="flex items-center gap-3 text-gray-700 font-medium">
-                  <Phone size={18} className="text-blue-600" />
+                  <Phone size={18} className="text-fasco-primary" />
                   <span>+91 422 4960258</span>
                 </div>
                 <div className="flex items-center gap-3 text-gray-700 font-medium">
-                  <Phone size={18} className="text-blue-600" />
+                  <Phone size={18} className="text-fasco-primary" />
                   <span>+91 78714 00997</span>
                 </div>
                 <div className="flex items-center gap-3 text-gray-700 font-medium">
-                  <Phone size={18} className="text-blue-600" />
+                  <Phone size={18} className="text-fasco-primary" />
                   <span>+91 99945 22566</span>
                 </div>
                 <div className="flex items-center gap-3">
-                  <Mail size={18} className="text-blue-600" />
-                  <a href="mailto:sales@fascoindia.com" className="text-gray-700 font-bold hover:text-blue-600 transition-colors">sales@fascoindia.com</a>
+                  <Mail size={18} className="text-fasco-primary" />
+                  <a href="mailto:sales@fascoindia.com" className="text-gray-700 font-bold hover:text-fasco-primary transition-colors">sales@fascoindia.com</a>
                 </div>
               </div>
             </motion.div>
@@ -83,7 +83,7 @@ export default function ContactPage() {
               <h3 className="text-gray-900 font-bold text-xl mb-8 uppercase tracking-tight">Regional Contacts</h3>
               <div className="space-y-6">
                 <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 rounded-full bg-blue-600/5 flex items-center justify-center text-blue-600">
+                  <div className="w-12 h-12 rounded-full bg-fasco-primary/5 flex items-center justify-center text-fasco-primary">
                     <User size={20} />
                   </div>
                   <div>
@@ -92,7 +92,7 @@ export default function ContactPage() {
                   </div>
                 </div>
                 <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 rounded-full bg-blue-600/5 flex items-center justify-center text-blue-600">
+                  <div className="w-12 h-12 rounded-full bg-fasco-primary/5 flex items-center justify-center text-fasco-primary">
                     <User size={20} />
                   </div>
                   <div>
@@ -110,37 +110,37 @@ export default function ContactPage() {
             whileInView={{ opacity: 1, scale: 1 }}
             className="p-10 md:p-14 rounded-[40px] glass border border-black/5 bg-white/60 shadow-2xl h-fit sticky top-32"
           >
-            <h3 className="text-4xl font-bold text-gray-900 mb-10 tracking-tight uppercase">Send us a <span className="text-blue-600">message</span></h3>
+            <h3 className="text-4xl font-bold text-gray-900 mb-10 tracking-tight uppercase">Send us a <span className="text-fasco-primary">message</span></h3>
             <form className="space-y-8">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div className="space-y-3">
                   <label className="text-[10px] font-bold text-gray-400 uppercase tracking-[0.2em] ml-2">Name *</label>
-                  <input type="text" required placeholder="Your Name" className="w-full bg-black/5 border border-black/5 rounded-2xl px-6 py-4 text-gray-900 placeholder:text-gray-400 focus:outline-none focus:bg-white focus:ring-4 focus:ring-blue-600/5 transition-all" />
+                  <input type="text" required placeholder="Your Name" className="w-full bg-black/5 border border-black/5 rounded-2xl px-6 py-4 text-gray-900 placeholder:text-gray-400 focus:outline-none focus:bg-white focus:ring-4 focus:ring-fasco-primary/5 transition-all" />
                 </div>
                 <div className="space-y-3">
                   <label className="text-[10px] font-bold text-gray-400 uppercase tracking-[0.2em] ml-2">Email *</label>
-                  <input type="email" required placeholder="Email Address" className="w-full bg-black/5 border border-black/5 rounded-2xl px-6 py-4 text-gray-900 placeholder:text-gray-400 focus:outline-none focus:bg-white focus:ring-4 focus:ring-blue-600/5 transition-all" />
+                  <input type="email" required placeholder="Email Address" className="w-full bg-black/5 border border-black/5 rounded-2xl px-6 py-4 text-gray-900 placeholder:text-gray-400 focus:outline-none focus:bg-white focus:ring-4 focus:ring-fasco-primary/5 transition-all" />
                 </div>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div className="space-y-3">
                   <label className="text-[10px] font-bold text-gray-400 uppercase tracking-[0.2em] ml-2">Phone Number *</label>
-                  <input type="tel" required placeholder="Phone Number" className="w-full bg-black/5 border border-black/5 rounded-2xl px-6 py-4 text-gray-900 placeholder:text-gray-400 focus:outline-none focus:bg-white focus:ring-4 focus:ring-blue-600/5 transition-all" />
+                  <input type="tel" required placeholder="Phone Number" className="w-full bg-black/5 border border-black/5 rounded-2xl px-6 py-4 text-gray-900 placeholder:text-gray-400 focus:outline-none focus:bg-white focus:ring-4 focus:ring-fasco-primary/5 transition-all" />
                 </div>
                 <div className="space-y-3">
                   <label className="text-[10px] font-bold text-gray-400 uppercase tracking-[0.2em] ml-2">Company Name</label>
-                  <input type="text" placeholder="Company Name" className="w-full bg-black/5 border border-black/5 rounded-2xl px-6 py-4 text-gray-900 placeholder:text-gray-400 focus:outline-none focus:bg-white focus:ring-4 focus:ring-blue-600/5 transition-all" />
+                  <input type="text" placeholder="Company Name" className="w-full bg-black/5 border border-black/5 rounded-2xl px-6 py-4 text-gray-900 placeholder:text-gray-400 focus:outline-none focus:bg-white focus:ring-4 focus:ring-fasco-primary/5 transition-all" />
                 </div>
               </div>
               <div className="space-y-3">
                 <label className="text-[10px] font-bold text-gray-400 uppercase tracking-[0.2em] ml-2">Subject</label>
-                <input type="text" placeholder="Topic of interest" className="w-full bg-black/5 border border-black/5 rounded-2xl px-6 py-4 text-gray-900 placeholder:text-gray-400 focus:outline-none focus:bg-white focus:ring-4 focus:ring-blue-600/5 transition-all" />
+                <input type="text" placeholder="Topic of interest" className="w-full bg-black/5 border border-black/5 rounded-2xl px-6 py-4 text-gray-900 placeholder:text-gray-400 focus:outline-none focus:bg-white focus:ring-4 focus:ring-fasco-primary/5 transition-all" />
               </div>
               <div className="space-y-3">
                 <label className="text-[10px] font-bold text-gray-400 uppercase tracking-[0.2em] ml-2">Your Message *</label>
-                <textarea rows={5} required placeholder="How can we help you?" className="w-full bg-black/5 border border-black/5 rounded-2xl px-6 py-4 text-gray-900 placeholder:text-gray-400 focus:outline-none focus:bg-white focus:ring-4 focus:ring-blue-600/5 transition-all resize-none" />
+                <textarea rows={5} required placeholder="How can we help you?" className="w-full bg-black/5 border border-black/5 rounded-2xl px-6 py-4 text-gray-900 placeholder:text-gray-400 focus:outline-none focus:bg-white focus:ring-4 focus:ring-fasco-primary/5 transition-all resize-none" />
               </div>
-              <button className="w-full py-5 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-2xl transition-all shadow-xl shadow-blue-600/20 active:scale-95 uppercase tracking-widest text-sm">
+              <button className="w-full py-5 bg-fasco-primary hover:bg-fasco-primary text-white font-bold rounded-2xl transition-all shadow-xl shadow-fasco-primary/20 active:scale-95 uppercase tracking-widest text-sm">
                 Send Message
               </button>
             </form>

@@ -34,32 +34,32 @@ export default function GetAQuotePage() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="space-y-2">
                   <label className="text-sm font-medium text-gray-400">Name *</label>
-                  <input type="text" required className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-blue-500/50 transition-colors" />
+                  <input type="text" required className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-fasco-primary/50 transition-colors" />
                 </div>
                 <div className="space-y-2">
                   <label className="text-sm font-medium text-gray-400">Email *</label>
-                  <input type="email" required className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-blue-500/50 transition-colors" />
+                  <input type="email" required className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-fasco-primary/50 transition-colors" />
                 </div>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="space-y-2">
                   <label className="text-sm font-medium text-gray-400">Phone Number *</label>
-                  <input type="tel" required className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-blue-500/50 transition-colors" />
+                  <input type="tel" required className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-fasco-primary/50 transition-colors" />
                 </div>
                 <div className="space-y-2">
                   <label className="text-sm font-medium text-gray-400">Company Name *</label>
-                  <input type="text" required className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-blue-500/50 transition-colors" />
+                  <input type="text" required className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-fasco-primary/50 transition-colors" />
                 </div>
               </div>
               <div className="space-y-2">
                 <label className="text-sm font-medium text-gray-400">Project Title</label>
-                <input type="text" className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-blue-500/50 transition-colors" />
+                <input type="text" className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-fasco-primary/50 transition-colors" />
               </div>
               <div className="space-y-2">
                 <label className="text-sm font-medium text-gray-400">Your Requirements *</label>
-                <textarea rows={6} required className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-blue-500/50 transition-colors resize-none" />
+                <textarea rows={6} required className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-fasco-primary/50 transition-colors resize-none" />
               </div>
-              <button className="w-full py-4 bg-blue-600 hover:bg-blue-500 text-white font-bold rounded-xl transition-all shadow-[0_0_20px_rgba(37,99,235,0.3)]">
+              <button className="w-full py-4 bg-fasco-primary hover:bg-fasco-primary text-white font-bold rounded-xl transition-all shadow-[0_0_20px_rgba(37,99,235,0.3)]">
                 Submit Quote Request
               </button>
             </form>
@@ -80,7 +80,7 @@ export default function GetAQuotePage() {
                 transition={{ delay: i * 0.1 }}
                 className="p-6 rounded-2xl glass flex items-start gap-4"
               >
-                <div className="w-12 h-12 rounded-xl bg-blue-600/10 border border-blue-500/20 flex items-center justify-center text-blue-400 shrink-0">
+                <div className="w-12 h-12 rounded-xl bg-fasco-primary/10 border border-fasco-primary/20 flex items-center justify-center text-blue-400 shrink-0">
                   <item.icon size={22} />
                 </div>
                 <div>

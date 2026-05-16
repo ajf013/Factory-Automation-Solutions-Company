@@ -14,25 +14,25 @@ export function HomeAbout() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
             >
-              <h2 className="text-4xl md:text-6xl font-black text-slate-900 mb-8 leading-tight tracking-tighter uppercase text-shadow-white">
+              <h2 className="text-4xl md:text-6xl font-black text-white mb-8 leading-tight tracking-tighter uppercase text-shadow-lg">
                 Welcome to<br />
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-500">Fasco India</span>
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-fasco-primary to-fasco-secondary text-glow filter drop-shadow-[0_0_15px_rgba(0,137,209,0.5)]">Fasco India</span>
               </h2>
             </motion.div>
-
+ 
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.1 }}
               className="space-y-6"
             >
-              <p className="text-slate-900 text-xl md:text-2xl leading-relaxed font-bold tracking-tight text-shadow-sm">
+              <p className="text-white text-xl md:text-2xl leading-relaxed font-bold tracking-tight text-shadow-md">
                 Factory Automation Solutions COmpany [FASCO] specializing in smart, value-optimized industrial automation systems that improve productivity, operational efficiency, and workplace safety.
               </p>
-              <p className="text-slate-800 text-lg leading-relaxed font-semibold text-shadow-sm">
+              <p className="text-slate-100 text-lg leading-relaxed font-semibold text-shadow-sm">
                 As a leading robotic systems integrator, we design and deploy advanced automation solutions engineered to maximize throughput, eliminate operational bottlenecks, and deliver consistent, high-precision performance.
               </p>
-              <p className="text-slate-700 leading-relaxed font-medium text-shadow-sm">
+              <p className="text-slate-200 leading-relaxed font-medium text-shadow-sm">
                 Driven by a mission to address manpower fatigue and critical safety challenges, FASCO focuses on automation solutions that enhance mechanical precision, reduce downtime, and ensure reliable, repeatable operations across industrial environments.
               </p>
             </motion.div>
@@ -43,7 +43,7 @@ export function HomeAbout() {
               transition={{ delay: 0.2 }}
               className="mt-10"
             >
-              <Link href="/about" className="inline-flex items-center gap-2 px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white rounded-full font-bold transition-all group shadow-xl shadow-blue-600/20">
+              <Link href="/about" className="inline-flex items-center gap-2 px-8 py-4 bg-fasco-primary hover:bg-fasco-primary text-white rounded-full font-bold transition-all group shadow-xl shadow-fasco-primary/20">
                 KNOW MORE
                 <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
               </Link>
@@ -66,7 +66,7 @@ export function HomeAbout() {
                   transition={{ delay: i * 0.1 }}
                   className="p-8 rounded-2xl bg-white/60 backdrop-blur-md border border-slate-200/50 shadow-sm text-center"
                 >
-                  <div className="text-4xl md:text-5xl font-black text-blue-600 mb-1">{stat.value}</div>
+                  <div className="text-4xl md:text-5xl font-black text-fasco-primary mb-1">{stat.value}</div>
                   <div className="text-slate-900 text-xs font-black uppercase tracking-widest">{stat.label}</div>
                 </motion.div>
               ))}
@@ -80,7 +80,7 @@ export function HomeAbout() {
               <h3 className="text-gray-900 font-bold mb-6">Multi-Brand Robot Expertise</h3>
               <div className="flex flex-wrap gap-2">
                 {['ABB', 'DENSO', 'EPSON', 'NACHI', 'FANUC', 'YASKAWA'].map((brand) => (
-                  <span key={brand} className="px-4 py-2 rounded-full bg-blue-600/5 border border-blue-600/10 text-blue-600 font-bold text-xs">{brand}</span>
+                  <span key={brand} className="px-4 py-2 rounded-full bg-fasco-primary/5 border border-fasco-primary/10 text-fasco-primary font-bold text-xs">{brand}</span>
                 ))}
               </div>
               <div className="mt-6 flex flex-wrap gap-2 items-center">

@@ -8,6 +8,9 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Fasco India | Next-Gen Industrial Automation & Robotics",
   description: "Specializing in smart, value-optimized industrial automation systems. Led by Team Singapore, Made in India.",
+  icons: {
+    icon: '/icon.svg',
+  },
 };
 
 import MainLayout from '@/components/layout/MainLayout';

@@ -15,7 +15,7 @@ export default function MainLayout({ children }: PropsWithChildren<{}>) {
   const headerOpacity = useTransform(scrollY, [0, 80], [1, 0]);
 
   return (
-    <div className="relative min-h-screen bg-3d bg-center bg-cover">
+    <div className="relative min-h-screen bg-transparent">
       {/* Sticky Header */}
       <motion.div
         style={{ opacity: headerOpacity }}
@@ -25,7 +25,15 @@ export default function MainLayout({ children }: PropsWithChildren<{}>) {
       </motion.div>
 
       {/* 3D Canvas – full screen behind content */}
-      <div className="fixed inset-0 z-0 overflow-hidden bg-[#f8fafc]">
+      <div 
+        className="fixed inset-0 -z-10 overflow-hidden bg-slate-950"
+        style={{ 
+          backgroundImage: "linear-gradient(to right, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.3) 50%, rgba(0,0,0,0.6) 100%), url('/background.png')", 
+          backgroundSize: 'cover', 
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat'
+        }}
+      >
         <Canvas
           camera={{ position: [0, 5, 15], fov: 50 }}
           dpr={[1, 2]}
@@ -50,7 +58,7 @@ export default function MainLayout({ children }: PropsWithChildren<{}>) {
       </div>
 
       {/* Content overlay */}
-      <div className="relative z-10 min-h-screen flex flex-col">
+      <div className="relative z-10 min-h-screen flex flex-col bg-transparent">
         {/* Push content below header height */}
         <div className="pt-20" />
         {children}

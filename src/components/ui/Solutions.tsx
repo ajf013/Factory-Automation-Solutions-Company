@@ -27,20 +27,20 @@ export function Solutions() {
             <motion.h2 
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              className="text-4xl md:text-5xl font-black text-slate-900 mb-4 uppercase text-shadow-white"
+              className="text-4xl md:text-5xl font-black text-white mb-4 uppercase text-shadow-lg"
             >
-              OUR <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-500">SOLUTIONS</span>
+              OUR <span className="text-fasco-primary">SOLUTIONS</span>
             </motion.h2>
             <motion.p 
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.1 }}
-              className="text-slate-900 max-w-xl text-lg font-bold text-shadow-sm"
+              className="text-white max-w-xl text-lg font-bold text-shadow-md"
             >
               Where design, fit, form, and function come together for factory automation excellence.
             </motion.p>
           </div>
-          <Link href="/solutions" className="px-8 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-xl text-sm font-bold transition-all shadow-xl shadow-blue-600/20">
+          <Link href="/solutions" className="px-8 py-3 bg-fasco-primary hover:bg-fasco-primary/90 text-white rounded-xl text-sm font-bold transition-all shadow-xl shadow-fasco-primary/20">
             View All Portfolio
           </Link>
         </div>
@@ -59,18 +59,18 @@ export function Solutions() {
               delay: i * 0.1, // Stagger effect: coming one by one
               ease: "easeOut" 
             }}
-            className="group p-8 rounded-3xl bg-white/60 backdrop-blur-md border border-slate-200 shadow-xl shadow-slate-200/10 hover:shadow-blue-500/20 transition-all flex flex-col justify-between h-[380px]"
+            className="group p-8 rounded-3xl bg-white/60 backdrop-blur-md border border-slate-200 shadow-xl shadow-slate-200/10 hover:shadow-fasco-primary/20 transition-all flex flex-col justify-between h-[380px]"
           >
             <div>
-              <div className="w-16 h-16 rounded-2xl bg-blue-600 flex items-center justify-center text-white mb-8 shadow-lg shadow-blue-600/20 group-hover:scale-110 transition-transform">
+              <div className="w-16 h-16 rounded-2xl bg-fasco-primary flex items-center justify-center text-white mb-8 shadow-lg shadow-fasco-primary/20 group-hover:scale-110 transition-transform">
                 <item.icon size={32} />
               </div>
               
-              <h3 className="text-2xl font-black text-slate-900 mb-4 leading-tight whitespace-normal uppercase tracking-tight group-hover:text-blue-600 transition-colors">{item.title}</h3>
+              <h3 className="text-2xl font-black text-slate-900 mb-4 leading-tight whitespace-normal uppercase tracking-tight group-hover:text-fasco-primary transition-colors">{item.title}</h3>
               <p className="text-slate-800 text-base leading-relaxed whitespace-normal line-clamp-4 font-bold">{item.desc}</p>
             </div>
             
-            <Link href={item.link} className="inline-flex items-center gap-2 text-blue-600 text-sm font-black group/link mt-6 uppercase tracking-wider">
+            <Link href={item.link} className="inline-flex items-center gap-2 text-fasco-primary text-sm font-black group/link mt-6 uppercase tracking-wider">
               Explore Solution <span className="group-hover/link:translate-x-1 transition-transform">→</span>
             </Link>
           </motion.div>

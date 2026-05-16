@@ -27,7 +27,7 @@ export default function FacilityPage() {
           className="text-center mb-20"
         >
           <h1 className="text-5xl md:text-7xl font-bold text-gray-900 mb-6 tracking-tight uppercase">
-            Facility & <span className="text-blue-600">Team</span>
+            Facility & <span className="text-fasco-primary">Team</span>
           </h1>
           <p className="text-gray-700 text-xl max-w-3xl mx-auto leading-relaxed font-medium">
             A state-of-the-art infrastructure supported by a team of specialized engineers.
@@ -37,26 +37,26 @@ export default function FacilityPage() {
         {/* Infrastructure Section */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-32">
           <div className="lg:col-span-2 p-12 rounded-3xl glass border border-black/5 bg-white/50">
-            <Factory className="text-blue-600 mb-8" size={48} />
+            <Factory className="text-fasco-primary mb-8" size={48} />
             <h2 className="text-4xl font-bold text-gray-900 mb-8">World-Class Infrastructure</h2>
             <ul className="space-y-6">
               <li className="flex items-start gap-4 text-gray-800 text-lg md:text-xl font-medium">
-                <div className="w-2.5 h-2.5 rounded-full bg-blue-600 mt-2.5 shrink-0" />
+                <div className="w-2.5 h-2.5 rounded-full bg-fasco-primary mt-2.5 shrink-0" />
                 <span>3500 sq.ft workspace dedicated to machine building and assembly.</span>
               </li>
               <li className="flex items-start gap-4 text-gray-800 text-lg md:text-xl font-medium">
-                <div className="w-2.5 h-2.5 rounded-full bg-blue-600 mt-2.5 shrink-0" />
+                <div className="w-2.5 h-2.5 rounded-full bg-fasco-primary mt-2.5 shrink-0" />
                 <span>2000 sq.ft in-house machine shop and fabrication setup.</span>
               </li>
               <li className="flex items-start gap-4 text-gray-800 text-lg md:text-xl font-medium">
-                <div className="w-2.5 h-2.5 rounded-full bg-blue-600 mt-2.5 shrink-0" />
+                <div className="w-2.5 h-2.5 rounded-full bg-fasco-primary mt-2.5 shrink-0" />
                 <span>Fully equipped with latest tools and a well-supported supplier backend.</span>
               </li>
             </ul>
           </div>
-          <div className="p-12 rounded-3xl bg-blue-600/5 border border-blue-600/10 backdrop-blur-md flex flex-col justify-center text-center">
-            <Users className="text-blue-600 mb-8 mx-auto" size={56} />
-            <div className="text-7xl font-bold text-blue-600 mb-2">20+</div>
+          <div className="p-12 rounded-3xl bg-fasco-primary/5 border border-fasco-primary/10 backdrop-blur-md flex flex-col justify-center text-center">
+            <Users className="text-fasco-primary mb-8 mx-auto" size={56} />
+            <div className="text-7xl font-bold text-fasco-primary mb-2">20+</div>
             <div className="text-gray-900 font-bold uppercase tracking-widest text-sm mb-4">Expert Engineers</div>
             <p className="text-gray-700 font-bold text-sm">Trained in design, development, manufacturing, and quality assurance.</p>
           </div>
@@ -64,7 +64,7 @@ export default function FacilityPage() {
 
         {/* Development Process */}
         <div className="mb-32">
-          <h2 className="text-4xl font-bold text-gray-900 text-center mb-20 uppercase tracking-tight">Our Development <span className="text-blue-600">Lifecycle</span></h2>
+          <h2 className="text-4xl font-bold text-gray-900 text-center mb-20 uppercase tracking-tight">Our Development <span className="text-fasco-primary">Lifecycle</span></h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
             {processSteps.map((step, i) => (
               <motion.div
@@ -72,9 +72,9 @@ export default function FacilityPage() {
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ delay: i * 0.05 }}
-                className="p-8 rounded-2xl glass border border-black/5 hover:border-blue-600/20 bg-white/40 hover:bg-white transition-all flex flex-col items-center text-center group shadow-sm hover:shadow-xl"
+                className="p-8 rounded-2xl glass border border-black/5 hover:border-fasco-primary/20 bg-white/40 hover:bg-white transition-all flex flex-col items-center text-center group shadow-sm hover:shadow-xl"
               >
-                <div className="w-14 h-14 rounded-full bg-blue-600/5 flex items-center justify-center text-blue-600 mb-6 group-hover:bg-blue-600 group-hover:text-white transition-all shadow-sm">
+                <div className="w-14 h-14 rounded-full bg-fasco-primary/5 flex items-center justify-center text-fasco-primary mb-6 group-hover:bg-fasco-primary group-hover:text-white transition-all shadow-sm">
                   <step.icon size={24} />
                 </div>
                 <h3 className="text-gray-900 font-bold text-sm mb-3 leading-tight uppercase tracking-wide">{step.title}</h3>

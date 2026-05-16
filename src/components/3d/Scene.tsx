@@ -35,7 +35,15 @@ function CameraController({ pathname }: { pathname: string }) {
 export function Scene() {
   const pathname = usePathname()
   return (
-    <div className="fixed inset-0 -z-10 bg-[#050505]">
+    <div 
+      className="fixed inset-0 -z-10 bg-[#050505]"
+      style={{ 
+        backgroundImage: "url('/background.png')", 
+        backgroundSize: 'cover', 
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat'
+      }}
+    >
       <Canvas shadows dpr={[1, 2]}>
         <PerspectiveCamera makeDefault position={[0, 0, 8]} fov={50} />
         <CameraController pathname={pathname} />

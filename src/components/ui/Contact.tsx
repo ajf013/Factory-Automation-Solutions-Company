@@ -7,7 +7,7 @@ import { Mail, Phone, MapPin, ArrowRight } from 'lucide-react'
 export function Contact() {
   return (
     <section id="contact" className="py-32 px-4 relative overflow-hidden">
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-blue-600/5 blur-[120px] rounded-full pointer-events-none" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-fasco-primary/5 blur-[120px] rounded-full pointer-events-none" />
       
       <div className="max-w-7xl mx-auto relative">
         <div className="p-10 md:p-20 rounded-[40px] glass-strong text-center">
@@ -49,7 +49,7 @@ export function Contact() {
           </div>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Link href="/contact" className="px-8 py-4 bg-blue-600 hover:bg-blue-500 text-white rounded-full font-semibold flex items-center gap-2 transition-all group shadow-[0_0_20px_rgba(37,99,235,0.3)]">
+            <Link href="/contact" className="px-8 py-4 bg-fasco-primary hover:bg-fasco-primary text-white rounded-full font-semibold flex items-center gap-2 transition-all group shadow-[0_0_20px_rgba(37,99,235,0.3)]">
               Contact Us
               <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
             </Link>
