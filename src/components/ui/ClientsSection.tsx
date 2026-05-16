@@ -1,85 +1,78 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { Building2, Factory, ShieldCheck, Zap, Gauge, Settings, Cpu, Layers } from 'lucide-react'
+import Image from 'next/image'
 
-const clients = [
-  { name: "Mother-son Automotive", icon: Factory, color: "bg-fasco-primary" },
-  { name: "Pricol Limited", icon: Gauge, color: "bg-slate-800" },
-  { name: "Wheels India", icon: Settings, color: "bg-fasco-primary" },
-  { name: "Murugappa Group", icon: Building2, color: "bg-slate-900" },
-  { name: "LMW", icon: Cpu, color: "bg-fasco-primary" },
-  { name: "ITW", icon: Zap, color: "bg-slate-700" },
-  { name: "Saint Gobain", icon: Layers, color: "bg-fasco-primary" },
-  { name: "ELGI", icon: ShieldCheck, color: "bg-slate-800" },
-  { name: "L&T", icon: Building2, color: "bg-blue-900" },
-  { name: "Rane", icon: Settings, color: "bg-slate-600" },
-  { name: "ITC Limited", icon: Factory, color: "bg-blue-800" },
-  { name: "Hindustan Unilever", icon: Building2, color: "bg-slate-700" },
-  { name: "Marico", icon: Zap, color: "bg-fasco-primary" }
+const clientLogos = [
+  { name: "Ars-HTA", src: "/clients/ars-hta.png" },
+  { name: "Redlands", src: "/clients/redlands.png" },
+  { name: "Brakes India", src: "/clients/brakes-india.png" },
+  { name: "Double Horse", src: "/clients/double-horse.png" },
+  { name: "Siderforgerossi", src: "/clients/siderforgerossi.png" },
+  { name: "TVS Rubber", src: "/clients/tvs-rubber.png" },
+  { name: "ELGi", src: "/clients/elgi.png" },
 ]
+
+// Duplicate the array to create a seamless infinite scroll
+const scrollingLogos = [...clientLogos, ...clientLogos, ...clientLogos]
 
 export function ClientsSection() {
   return (
-    <section className="py-24 px-4 relative">
-      <div className="max-w-4xl mx-auto">
+    <section className="py-32 px-4 relative overflow-hidden">
+      <div className="max-w-7xl mx-auto relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-center mb-16"
+          className="text-center mb-20"
         >
-          <h2 className="text-4xl md:text-5xl font-black text-white mb-4 uppercase text-shadow-lg">
-            Our <span className="text-fasco-primary">Clients</span>
-          </h2>
-          <p className="text-white font-bold text-lg text-shadow-md">
-            Trusted by Industry Leaders — Delivering Excellence One Project at a Time
+          <div className="flex items-center justify-center gap-4 mb-4">
+            <div className="h-px w-24 bg-gradient-to-r from-transparent to-fasco-primary" />
+            <h2 className="text-4xl md:text-5xl font-black text-white uppercase tracking-tighter text-shadow-lg">
+              Our <span className="text-fasco-primary">Clients</span>
+            </h2>
+            <div className="h-px w-24 bg-gradient-to-l from-transparent to-fasco-primary" />
+          </div>
+          <p className="text-white/80 font-bold text-lg text-shadow-md">
+            Trusted by Industry Leaders Worldwide
           </p>
         </motion.div>
+      </div>
 
-        {/* Vertical Staggered List - Appearing One by One Down */}
-        <div className="flex flex-col gap-6">
-          {clients.map((client, i) => (
-            <motion.div
-              key={i}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-50px" }}
-              transition={{ 
-                duration: 0.7, 
-                delay: i * 0.15, // Deliberate stagger: coming one by one
-                ease: [0.215, 0.61, 0.355, 1] 
-              }}
-              className="group flex items-center justify-between p-8 rounded-3xl bg-white/70 backdrop-blur-xl border border-slate-200 shadow-2xl shadow-slate-200/20 hover:bg-white hover:border-fasco-primary/30 transition-all duration-500"
+      {/* Infinite Scrolling Marquee */}
+      <div className="relative flex overflow-hidden py-10 bg-white/5 backdrop-blur-sm border-y border-white/10">
+        <motion.div
+          className="flex gap-20 items-center whitespace-nowrap"
+          animate={{
+            x: [0, -1920], // Adjust based on total width
+          }}
+          transition={{
+            x: {
+              repeat: Infinity,
+              repeatType: "loop",
+              duration: 30,
+              ease: "linear",
+            },
+          }}
+        >
+          {scrollingLogos.map((client, i) => (
+            <div 
+              key={i} 
+              className="relative w-48 h-24 flex-shrink-0 group grayscale hover:grayscale-0 transition-all duration-500"
             >
-              <div className="flex items-center gap-8">
-                {/* Generated 'Logo' Mark with Gradient */}
-                <div className={`w-20 h-20 rounded-2xl ${client.color} bg-gradient-to-br from-current to-black/20 flex items-center justify-center text-white shadow-xl shadow-fasco-primary/10 group-hover:scale-105 group-hover:rotate-3 transition-all duration-500`}>
-                  <client.icon size={36} />
-                </div>
-                
-                <div>
-                  <h3 className="text-2xl md:text-3xl font-black text-slate-900 uppercase tracking-tighter group-hover:text-fasco-primary transition-colors duration-500">
-                    {client.name}
-                  </h3>
-                  <div className="flex items-center gap-2 mt-2">
-                    <div className="h-1 w-16 bg-fasco-primary rounded-full group-hover:w-32 transition-all duration-700" />
-                    <span className="text-[10px] font-black text-slate-400 uppercase tracking-widest opacity-0 group-hover:opacity-100 transition-opacity duration-700">Premier Partner</span>
-                  </div>
-                </div>
-              </div>
-
-              <div className="hidden lg:flex flex-col items-end gap-1">
-                <div className="flex gap-1">
-                  {[1, 2, 3, 4, 5].map((s) => (
-                    <div key={s} className="w-1.5 h-1.5 rounded-full bg-fasco-primary" />
-                  ))}
-                </div>
-                <span className="text-[10px] font-black text-slate-400 uppercase tracking-[0.2em]">Verified Excellence</span>
-              </div>
-            </motion.div>
+              <Image
+                src={client.src}
+                alt={client.name}
+                fill
+                className="object-contain filter brightness-100 group-hover:scale-110 transition-transform duration-500"
+              />
+            </div>
           ))}
-        </div>
+        </motion.div>
+        
+        {/* Gradient Fades for Smooth Edges */}
+        <div className="absolute inset-y-0 left-0 w-40 bg-gradient-to-r from-black/50 to-transparent z-10 pointer-events-none" />
+        <div className="absolute inset-y-0 right-0 w-40 bg-gradient-to-l from-black/50 to-transparent z-10 pointer-events-none" />
       </div>
     </section>
   )
