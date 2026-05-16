@@ -27,7 +27,7 @@ export function HomeAbout() {
               className="space-y-6"
             >
               <p className="text-white text-xl md:text-2xl leading-relaxed font-bold tracking-tight text-shadow-md">
-                Factory Automation Solutions COmpany [FASCO] specializing in smart, value-optimized industrial automation systems that improve productivity, operational efficiency, and workplace safety.
+                Factory Automation Solutions Company [FASCO] specializing in smart, value-optimized industrial automation systems that improve productivity, operational efficiency, and workplace safety.
               </p>
               <p className="text-slate-100 text-lg leading-relaxed font-semibold text-shadow-sm">
                 As a leading robotic systems integrator, we design and deploy advanced automation solutions engineered to maximize throughput, eliminate operational bottlenecks, and deliver consistent, high-precision performance.
